@@ -2,3 +2,6 @@ Running: xsim.dir/ControlUnit_tb_behav/xsimk.exe -simmode gui -wdb ControlUnit_t
 Design successfully loaded
 Design Loading Memory Usage: 9816 KB (Peak: 9816 KB)
 Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 10584 KB (Peak: 10584 KB)
+Simulation CPU Usage: 46 ms

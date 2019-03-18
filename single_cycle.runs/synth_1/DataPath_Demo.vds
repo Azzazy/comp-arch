@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Mon Mar 18 19:09:13 2019
-# Process ID: 11280
+# Start of session at: Mon Mar 18 22:41:04 2019
+# Process ID: 11232
 # Current directory: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/synth_1
 # Command line: vivado.exe -log DataPath_Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DataPath_Demo.tcl
 # Log file: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/synth_1/DataPath_Demo.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3820 
+INFO: Helper process launched with PID 7688 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 306.309 ; gain = 95.922
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 306.379 ; gain = 95.984
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DataPath_Demo' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath_Demo.v:1]
 INFO: [Synth 8-638] synthesizing module 'DataPath' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:1]
@@ -36,40 +36,37 @@ INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/msa.
 INFO: [Synth 8-638] synthesizing module 'ImmGen' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:1]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:3]
 INFO: [Synth 8-256] done synthesizing module 'ImmGen' (7#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:24]
-WARNING: [Synth 8-689] width (32) of port connection 'B' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:24]
-WARNING: [Synth 8-689] width (32) of port connection 'C' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:24]
+INFO: [Synth 8-638] synthesizing module 'Mux_2by1_32' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Mux_2by1_32.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2by1_32' (8#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Mux_2by1_32.v:1]
 INFO: [Synth 8-638] synthesizing module 'ALU_ControlUnit' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:1]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:10]
-INFO: [Synth 8-256] done synthesizing module 'ALU_ControlUnit' (8#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ALU_ControlUnit' (9#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:1]
 WARNING: [Synth 8-689] width (1) of port connection 'ALUop' does not match port width (2) of module 'ALU_ControlUnit' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:27]
 INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:1]
 INFO: [Synth 8-638] synthesizing module 'RippleCarryAdder' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RippleCarryAdder.v:1]
 INFO: [Synth 8-638] synthesizing module 'FullAdder' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/FullAdder.v:1]
-INFO: [Synth 8-256] done synthesizing module 'FullAdder' (9#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/FullAdder.v:1]
-INFO: [Synth 8-256] done synthesizing module 'RippleCarryAdder' (10#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RippleCarryAdder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (10#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/FullAdder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RippleCarryAdder' (11#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RippleCarryAdder.v:1]
 INFO: [Synth 8-638] synthesizing module 'And' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/And.v:1]
-INFO: [Synth 8-256] done synthesizing module 'And' (11#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/And.v:1]
+INFO: [Synth 8-256] done synthesizing module 'And' (12#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/And.v:1]
 INFO: [Synth 8-638] synthesizing module 'Or' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Or.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Or' (12#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Or.v:1]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (13#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Or' (13#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Or.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:15]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (14#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:1]
 INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataMem.v:1]
-INFO: [Synth 8-256] done synthesizing module 'DataMem' (14#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataMem.v:1]
-WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:36]
-WARNING: [Synth 8-689] width (32) of port connection 'B' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:36]
-WARNING: [Synth 8-689] width (32) of port connection 'C' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:36]
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (15#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataMem.v:1]
 INFO: [Synth 8-638] synthesizing module 'InstMem' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/InstMem.v:1]
-INFO: [Synth 8-256] done synthesizing module 'InstMem' (15#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/InstMem.v:1]
+INFO: [Synth 8-256] done synthesizing module 'InstMem' (16#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/InstMem.v:1]
 INFO: [Synth 8-638] synthesizing module 'ShiftLeft_1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ShiftLeft_1.v:1]
-INFO: [Synth 8-256] done synthesizing module 'ShiftLeft_1' (16#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ShiftLeft_1.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft_1' (17#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ShiftLeft_1.v:1]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:57]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:73]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:74]
 WARNING: [Synth 8-5788] Register pc_reg in module DataPath is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:38]
 WARNING: [Synth 8-3848] Net ALUop in module/entity DataPath does not have driver. [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:27]
-INFO: [Synth 8-256] done synthesizing module 'DataPath' (17#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (18#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:1]
 INFO: [Synth 8-638] synthesizing module 'Four_Digit_Seven_Segment_Driver' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Four_Digit.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Four_Digit_Seven_Segment_Driver' (18#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Four_Digit.v:1]
-INFO: [Synth 8-256] done synthesizing module 'DataPath_Demo' (19#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath_Demo.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Four_Digit_Seven_Segment_Driver' (19#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Four_Digit.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DataPath_Demo' (20#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath_Demo.v:1]
 WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[31]
 WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[29]
 WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[28]
@@ -139,7 +136,7 @@ WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[7]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[1]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 343.637 ; gain = 133.250
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 343.715 ; gain = 133.320
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -150,7 +147,7 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 WARNING: [Synth 8-3295] tying undriven pin aLU_ControlUnit:ALUop[0] to constant 0 [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:27]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 343.637 ; gain = 133.250
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 343.715 ; gain = 133.320
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -166,28 +163,29 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 660.422 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 660.258 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "ALU_Selection" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ALU_Selection" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Add_Selector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Add_Selector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Output" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "pc" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:5]
@@ -198,11 +196,12 @@ WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/msa.a
 WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:11]
 WARNING: [Synth 8-327] inferring latch for variable 'Immediate_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:5]
 WARNING: [Synth 8-327] inferring latch for variable 'ALU_Selection_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:6]
-WARNING: [Synth 8-327] inferring latch for variable 'Add_Selector_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'Output_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'Add_Selector_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:8]
 WARNING: [Synth 8-327] inferring latch for variable 'leds_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:59]
-WARNING: [Synth 8-327] inferring latch for variable 'ssd_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'ssd_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:76]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -223,7 +222,7 @@ Detailed RTL Component Info :
 	               32 Bit    Registers := 1     
 	                1 Bit    Registers := 1024  
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 6     
 	   4 Input     32 Bit        Muxes := 1     
 	   5 Input     32 Bit        Muxes := 1     
 	  14 Input     32 Bit        Muxes := 1     
@@ -232,9 +231,9 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 7     
 	   4 Input      1 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
 	  13 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -260,6 +259,10 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   4 Input     32 Bit        Muxes := 1     
 	   4 Input      1 Bit        Muxes := 1     
+Module Mux_2by1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 Module ALU_ControlUnit 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -279,8 +282,8 @@ Module ALU
 Detailed RTL Component Info : 
 +---Muxes : 
 	   5 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
 Module DataMem 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -321,26 +324,7 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[31]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[30]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[29]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[28]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[27]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[26]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[25]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[24]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[23]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[22]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[21]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[20]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[19]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[18]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[17]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[16]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[15]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[14]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[13]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
-INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[12]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[31]' (LD) to 'dataPath/immGen/Immediate_reg[30]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[31].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[31].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[31].Df/Q_reg )
@@ -357,6 +341,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[31].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[31].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[30]' (LD) to 'dataPath/immGen/Immediate_reg[29]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[30].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[30].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[30].Df/Q_reg )
@@ -373,22 +358,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[30].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[30].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[30].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[29].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[28]' (LD) to 'dataPath/immGen/Immediate_reg[29]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[28].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[28].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[28].Df/Q_reg )
@@ -405,22 +375,24 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[28].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[28].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[28].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[27].Df/Q_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[29]' (LD) to 'dataPath/immGen/Immediate_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[26]' (LD) to 'dataPath/immGen/Immediate_reg[27]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[26].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[26].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[26].Df/Q_reg )
@@ -437,120 +409,151 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[26].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[26].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[25]' (LD) to 'dataPath/immGen/Immediate_reg[27]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[25].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[25].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[25].Df/Q_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[24]' (LD) to 'dataPath/immGen/Immediate_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[24].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[24].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[24].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[24].Df/Q_reg )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[27]' (LD) to 'dataPath/immGen/Immediate_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[22]' (LD) to 'dataPath/immGen/Immediate_reg[23]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[23]' (LD) to 'dataPath/immGen/Immediate_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[20]' (LD) to 'dataPath/immGen/Immediate_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[19]' (LD) to 'dataPath/immGen/Immediate_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[18]' (LD) to 'dataPath/immGen/Immediate_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[17]' (LD) to 'dataPath/immGen/Immediate_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[16]' (LD) to 'dataPath/immGen/Immediate_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[21]' (LD) to 'dataPath/immGen/Immediate_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[14]' (LD) to 'dataPath/immGen/Immediate_reg[15]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[15]' (LD) to 'dataPath/immGen/Immediate_reg[13]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[13]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[12]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[4]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[5]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[6]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[7]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[8]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/controlUnit/Branch_reg' (LD) to 'dataPath/controlUnit/ALUOp_reg[0]'
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
-WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[0].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[16].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[0].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[17].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[0].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[18].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[19].R/genblk1[0].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[19].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[19].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[19].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -560,7 +563,7 @@ Distributed RAM: Preliminary Mapping  Report (see note below)
 +--------------+--------------------------+-----------+----------------------+-----------------+
 |Module Name   | RTL Object               | Inference | Size (Depth x Width) | Primitives      | 
 +--------------+--------------------------+-----------+----------------------+-----------------+
-|DataPath_Demo | dataPath/dataMem/mem_reg | Implied   | 64 x 13              | RAM64X1S x 13   | 
+|DataPath_Demo | dataPath/dataMem/mem_reg | Implied   | 64 x 32              | RAM64X1S x 32   | 
 +--------------+--------------------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -580,10 +583,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -594,8 +597,83 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[18].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[18].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[18].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[18].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[18].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[18].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[18].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[18].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[19].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[19].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[19].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[19].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[19].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[19].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[19].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[19].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[16].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[16].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[16].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[16].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[16].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[16].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[16].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[16].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[17].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[17].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[17].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[17].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[17].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[17].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[17].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[17].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[22].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[22].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[22].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[22].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[22].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[22].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[22].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[22].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[24].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[24].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[24].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[24].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[24].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[24].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[24].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[24].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[23].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[23].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[23].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[23].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[23].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[23].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[23].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[23].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[14].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[14].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[14].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[14].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[14].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[14].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[14].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[14].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[15].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[15].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[15].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[15].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[15].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[15].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[15].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[15].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[13].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[13].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[13].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[13].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[13].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[13].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[13].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[13].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[6].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[6].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[6].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[6].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[6].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[6].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[6].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[6].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[1].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[1].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[1].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[1].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[1].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[1].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[1].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[1].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[0].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[0].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[0].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[0].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[0].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[0].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[0].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[0].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[5].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[5].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[5].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[5].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[5].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[5].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[5].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[5].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[3].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[3].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[3].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[3].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[3].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[3].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[3].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[3].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[2].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[2].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[2].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[2].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[2].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[2].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[2].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[2].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[12].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[12].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[12].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[12].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[12].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[12].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[12].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[12].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[21].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[21].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[21].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[21].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[15].R/genblk1[21].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[21].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[10].R/genblk1[21].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[11].R/genblk1[21].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[13].R/genblk1[20].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[20].Df/Q_reg'
+INFO: [Synth 8-3886] merging instance 'dataPath/registerFile/genblk1[14].R/genblk1[20].Df/Q_reg' (FDCE) to 'dataPath/registerFile/genblk1[15].R/genblk1[20].Df/Q_reg'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -619,7 +697,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -632,7 +710,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -644,25 +722,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -681,82 +759,414 @@ Report Cell Usage:
 |1     |BUFG     |     2|
 |2     |CARRY4   |    36|
 |3     |LUT1     |    53|
-|4     |LUT2     |    45|
-|5     |LUT3     |    32|
-|6     |LUT4     |    58|
-|7     |LUT5     |    24|
-|8     |LUT6     |    91|
-|9     |MUXF7    |     1|
-|10    |RAM64X1S |    13|
-|11    |FDCE     |    28|
-|12    |FDRE     |    20|
-|13    |LD       |    28|
-|14    |IBUF     |     9|
-|15    |OBUF     |    27|
+|4     |LUT2     |    87|
+|5     |LUT3     |   137|
+|6     |LUT4     |   110|
+|7     |LUT5     |    63|
+|8     |LUT6     |   277|
+|9     |MUXF7    |    96|
+|10    |MUXF8    |    32|
+|11    |RAM64X1S |    32|
+|12    |FDCE     |   364|
+|13    |FDRE     |    20|
+|14    |LD       |    28|
+|15    |IBUF     |     9|
+|16    |OBUF     |    27|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+----------------------------------+--------------------------------+------+
 |      |Instance                          |Module                          |Cells |
 +------+----------------------------------+--------------------------------+------+
-|1     |top                               |                                |   467|
-|2     |  dataPath                        |DataPath                        |   326|
-|3     |    dataMem                       |DataMem                         |    54|
-|4     |    registerFile                  |RegisterFile                    |    49|
-|5     |      \genblk1[0].R               |Register                        |     4|
-|6     |        \genblk1[0].Df            |DFlipFlop_29                    |     4|
-|7     |      \genblk1[10].R              |Register_0                      |     1|
-|8     |        \genblk1[0].Df            |DFlipFlop_28                    |     1|
-|9     |      \genblk1[11].R              |Register_1                      |     2|
-|10    |        \genblk1[0].Df            |DFlipFlop_27                    |     2|
-|11    |      \genblk1[12].R              |Register_2                      |     1|
-|12    |        \genblk1[0].Df            |DFlipFlop_26                    |     1|
-|13    |      \genblk1[13].R              |Register_3                      |     1|
-|14    |        \genblk1[0].Df            |DFlipFlop_25                    |     1|
-|15    |      \genblk1[14].R              |Register_4                      |     1|
-|16    |        \genblk1[0].Df            |DFlipFlop_24                    |     1|
-|17    |      \genblk1[15].R              |Register_5                      |    10|
-|18    |        \genblk1[0].Df            |DFlipFlop_23                    |    10|
-|19    |      \genblk1[1].R               |Register_6                      |     1|
-|20    |        \genblk1[0].Df            |DFlipFlop_22                    |     1|
-|21    |      \genblk1[2].R               |Register_7                      |     1|
-|22    |        \genblk1[0].Df            |DFlipFlop_21                    |     1|
-|23    |      \genblk1[3].R               |Register_8                      |    19|
-|24    |        \genblk1[0].Df            |DFlipFlop_20                    |    19|
-|25    |      \genblk1[4].R               |Register_9                      |     1|
-|26    |        \genblk1[0].Df            |DFlipFlop_19                    |     1|
-|27    |      \genblk1[5].R               |Register_10                     |     1|
-|28    |        \genblk1[0].Df            |DFlipFlop_18                    |     1|
-|29    |      \genblk1[6].R               |Register_11                     |     1|
-|30    |        \genblk1[0].Df            |DFlipFlop_17                    |     1|
-|31    |      \genblk1[7].R               |Register_12                     |     3|
-|32    |        \genblk1[0].Df            |DFlipFlop_16                    |     3|
-|33    |      \genblk1[8].R               |Register_13                     |     1|
-|34    |        \genblk1[0].Df            |DFlipFlop_15                    |     1|
-|35    |      \genblk1[9].R               |Register_14                     |     1|
-|36    |        \genblk1[0].Df            |DFlipFlop                       |     1|
-|37    |  four_Digit_Seven_Segment_Driver |Four_Digit_Seven_Segment_Driver |   103|
+|1     |top                               |                                |  1373|
+|2     |  dataPath                        |DataPath                        |  1232|
+|3     |    dataMem                       |DataMem                         |    67|
+|4     |    registerFile                  |RegisterFile                    |   937|
+|5     |      \genblk1[0].R               |Register                        |    33|
+|6     |        \genblk1[0].Df            |DFlipFlop_329                   |     2|
+|7     |        \genblk1[10].Df           |DFlipFlop_330                   |     1|
+|8     |        \genblk1[11].Df           |DFlipFlop_331                   |     1|
+|9     |        \genblk1[12].Df           |DFlipFlop_332                   |     1|
+|10    |        \genblk1[13].Df           |DFlipFlop_333                   |     1|
+|11    |        \genblk1[14].Df           |DFlipFlop_334                   |     1|
+|12    |        \genblk1[15].Df           |DFlipFlop_335                   |     1|
+|13    |        \genblk1[16].Df           |DFlipFlop_336                   |     1|
+|14    |        \genblk1[17].Df           |DFlipFlop_337                   |     1|
+|15    |        \genblk1[18].Df           |DFlipFlop_338                   |     1|
+|16    |        \genblk1[19].Df           |DFlipFlop_339                   |     1|
+|17    |        \genblk1[1].Df            |DFlipFlop_340                   |     1|
+|18    |        \genblk1[20].Df           |DFlipFlop_341                   |     1|
+|19    |        \genblk1[21].Df           |DFlipFlop_342                   |     1|
+|20    |        \genblk1[22].Df           |DFlipFlop_343                   |     1|
+|21    |        \genblk1[23].Df           |DFlipFlop_344                   |     1|
+|22    |        \genblk1[24].Df           |DFlipFlop_345                   |     1|
+|23    |        \genblk1[25].Df           |DFlipFlop_346                   |     1|
+|24    |        \genblk1[26].Df           |DFlipFlop_347                   |     1|
+|25    |        \genblk1[27].Df           |DFlipFlop_348                   |     1|
+|26    |        \genblk1[28].Df           |DFlipFlop_349                   |     1|
+|27    |        \genblk1[29].Df           |DFlipFlop_350                   |     1|
+|28    |        \genblk1[2].Df            |DFlipFlop_351                   |     1|
+|29    |        \genblk1[30].Df           |DFlipFlop_352                   |     1|
+|30    |        \genblk1[31].Df           |DFlipFlop_353                   |     1|
+|31    |        \genblk1[3].Df            |DFlipFlop_354                   |     1|
+|32    |        \genblk1[4].Df            |DFlipFlop_355                   |     1|
+|33    |        \genblk1[5].Df            |DFlipFlop_356                   |     1|
+|34    |        \genblk1[6].Df            |DFlipFlop_357                   |     1|
+|35    |        \genblk1[7].Df            |DFlipFlop_358                   |     1|
+|36    |        \genblk1[8].Df            |DFlipFlop_359                   |     1|
+|37    |        \genblk1[9].Df            |DFlipFlop_360                   |     1|
+|38    |      \genblk1[12].R              |Register_0                      |    78|
+|39    |        \genblk1[0].Df            |DFlipFlop_297                   |     3|
+|40    |        \genblk1[10].Df           |DFlipFlop_298                   |     3|
+|41    |        \genblk1[11].Df           |DFlipFlop_299                   |     2|
+|42    |        \genblk1[12].Df           |DFlipFlop_300                   |     2|
+|43    |        \genblk1[13].Df           |DFlipFlop_301                   |     2|
+|44    |        \genblk1[14].Df           |DFlipFlop_302                   |     2|
+|45    |        \genblk1[15].Df           |DFlipFlop_303                   |     2|
+|46    |        \genblk1[16].Df           |DFlipFlop_304                   |     3|
+|47    |        \genblk1[17].Df           |DFlipFlop_305                   |     2|
+|48    |        \genblk1[18].Df           |DFlipFlop_306                   |     2|
+|49    |        \genblk1[19].Df           |DFlipFlop_307                   |     2|
+|50    |        \genblk1[1].Df            |DFlipFlop_308                   |     2|
+|51    |        \genblk1[20].Df           |DFlipFlop_309                   |     2|
+|52    |        \genblk1[21].Df           |DFlipFlop_310                   |     2|
+|53    |        \genblk1[22].Df           |DFlipFlop_311                   |     2|
+|54    |        \genblk1[23].Df           |DFlipFlop_312                   |     6|
+|55    |        \genblk1[24].Df           |DFlipFlop_313                   |     2|
+|56    |        \genblk1[25].Df           |DFlipFlop_314                   |     2|
+|57    |        \genblk1[26].Df           |DFlipFlop_315                   |     2|
+|58    |        \genblk1[27].Df           |DFlipFlop_316                   |     2|
+|59    |        \genblk1[28].Df           |DFlipFlop_317                   |     2|
+|60    |        \genblk1[29].Df           |DFlipFlop_318                   |     2|
+|61    |        \genblk1[2].Df            |DFlipFlop_319                   |     2|
+|62    |        \genblk1[30].Df           |DFlipFlop_320                   |     7|
+|63    |        \genblk1[31].Df           |DFlipFlop_321                   |     2|
+|64    |        \genblk1[3].Df            |DFlipFlop_322                   |     2|
+|65    |        \genblk1[4].Df            |DFlipFlop_323                   |     2|
+|66    |        \genblk1[5].Df            |DFlipFlop_324                   |     2|
+|67    |        \genblk1[6].Df            |DFlipFlop_325                   |     2|
+|68    |        \genblk1[7].Df            |DFlipFlop_326                   |     2|
+|69    |        \genblk1[8].Df            |DFlipFlop_327                   |     4|
+|70    |        \genblk1[9].Df            |DFlipFlop_328                   |     2|
+|71    |      \genblk1[1].R               |Register_1                      |    33|
+|72    |        \genblk1[0].Df            |DFlipFlop_265                   |     2|
+|73    |        \genblk1[10].Df           |DFlipFlop_266                   |     1|
+|74    |        \genblk1[11].Df           |DFlipFlop_267                   |     1|
+|75    |        \genblk1[12].Df           |DFlipFlop_268                   |     1|
+|76    |        \genblk1[13].Df           |DFlipFlop_269                   |     1|
+|77    |        \genblk1[14].Df           |DFlipFlop_270                   |     1|
+|78    |        \genblk1[15].Df           |DFlipFlop_271                   |     1|
+|79    |        \genblk1[16].Df           |DFlipFlop_272                   |     1|
+|80    |        \genblk1[17].Df           |DFlipFlop_273                   |     1|
+|81    |        \genblk1[18].Df           |DFlipFlop_274                   |     1|
+|82    |        \genblk1[19].Df           |DFlipFlop_275                   |     1|
+|83    |        \genblk1[1].Df            |DFlipFlop_276                   |     1|
+|84    |        \genblk1[20].Df           |DFlipFlop_277                   |     1|
+|85    |        \genblk1[21].Df           |DFlipFlop_278                   |     1|
+|86    |        \genblk1[22].Df           |DFlipFlop_279                   |     1|
+|87    |        \genblk1[23].Df           |DFlipFlop_280                   |     1|
+|88    |        \genblk1[24].Df           |DFlipFlop_281                   |     1|
+|89    |        \genblk1[25].Df           |DFlipFlop_282                   |     1|
+|90    |        \genblk1[26].Df           |DFlipFlop_283                   |     1|
+|91    |        \genblk1[27].Df           |DFlipFlop_284                   |     1|
+|92    |        \genblk1[28].Df           |DFlipFlop_285                   |     1|
+|93    |        \genblk1[29].Df           |DFlipFlop_286                   |     1|
+|94    |        \genblk1[2].Df            |DFlipFlop_287                   |     1|
+|95    |        \genblk1[30].Df           |DFlipFlop_288                   |     1|
+|96    |        \genblk1[31].Df           |DFlipFlop_289                   |     1|
+|97    |        \genblk1[3].Df            |DFlipFlop_290                   |     1|
+|98    |        \genblk1[4].Df            |DFlipFlop_291                   |     1|
+|99    |        \genblk1[5].Df            |DFlipFlop_292                   |     1|
+|100   |        \genblk1[6].Df            |DFlipFlop_293                   |     1|
+|101   |        \genblk1[7].Df            |DFlipFlop_294                   |     1|
+|102   |        \genblk1[8].Df            |DFlipFlop_295                   |     1|
+|103   |        \genblk1[9].Df            |DFlipFlop_296                   |     1|
+|104   |      \genblk1[2].R               |Register_2                      |    33|
+|105   |        \genblk1[0].Df            |DFlipFlop_233                   |     2|
+|106   |        \genblk1[10].Df           |DFlipFlop_234                   |     1|
+|107   |        \genblk1[11].Df           |DFlipFlop_235                   |     1|
+|108   |        \genblk1[12].Df           |DFlipFlop_236                   |     1|
+|109   |        \genblk1[13].Df           |DFlipFlop_237                   |     1|
+|110   |        \genblk1[14].Df           |DFlipFlop_238                   |     1|
+|111   |        \genblk1[15].Df           |DFlipFlop_239                   |     1|
+|112   |        \genblk1[16].Df           |DFlipFlop_240                   |     1|
+|113   |        \genblk1[17].Df           |DFlipFlop_241                   |     1|
+|114   |        \genblk1[18].Df           |DFlipFlop_242                   |     1|
+|115   |        \genblk1[19].Df           |DFlipFlop_243                   |     1|
+|116   |        \genblk1[1].Df            |DFlipFlop_244                   |     1|
+|117   |        \genblk1[20].Df           |DFlipFlop_245                   |     1|
+|118   |        \genblk1[21].Df           |DFlipFlop_246                   |     1|
+|119   |        \genblk1[22].Df           |DFlipFlop_247                   |     1|
+|120   |        \genblk1[23].Df           |DFlipFlop_248                   |     1|
+|121   |        \genblk1[24].Df           |DFlipFlop_249                   |     1|
+|122   |        \genblk1[25].Df           |DFlipFlop_250                   |     1|
+|123   |        \genblk1[26].Df           |DFlipFlop_251                   |     1|
+|124   |        \genblk1[27].Df           |DFlipFlop_252                   |     1|
+|125   |        \genblk1[28].Df           |DFlipFlop_253                   |     1|
+|126   |        \genblk1[29].Df           |DFlipFlop_254                   |     1|
+|127   |        \genblk1[2].Df            |DFlipFlop_255                   |     1|
+|128   |        \genblk1[30].Df           |DFlipFlop_256                   |     1|
+|129   |        \genblk1[31].Df           |DFlipFlop_257                   |     1|
+|130   |        \genblk1[3].Df            |DFlipFlop_258                   |     1|
+|131   |        \genblk1[4].Df            |DFlipFlop_259                   |     1|
+|132   |        \genblk1[5].Df            |DFlipFlop_260                   |     1|
+|133   |        \genblk1[6].Df            |DFlipFlop_261                   |     1|
+|134   |        \genblk1[7].Df            |DFlipFlop_262                   |     1|
+|135   |        \genblk1[8].Df            |DFlipFlop_263                   |     1|
+|136   |        \genblk1[9].Df            |DFlipFlop_264                   |     1|
+|137   |      \genblk1[3].R               |Register_3                      |   433|
+|138   |        \genblk1[0].Df            |DFlipFlop_201                   |    14|
+|139   |        \genblk1[10].Df           |DFlipFlop_202                   |    19|
+|140   |        \genblk1[11].Df           |DFlipFlop_203                   |    19|
+|141   |        \genblk1[12].Df           |DFlipFlop_204                   |    18|
+|142   |        \genblk1[13].Df           |DFlipFlop_205                   |    11|
+|143   |        \genblk1[14].Df           |DFlipFlop_206                   |    11|
+|144   |        \genblk1[15].Df           |DFlipFlop_207                   |    15|
+|145   |        \genblk1[16].Df           |DFlipFlop_208                   |    11|
+|146   |        \genblk1[17].Df           |DFlipFlop_209                   |    13|
+|147   |        \genblk1[18].Df           |DFlipFlop_210                   |    11|
+|148   |        \genblk1[19].Df           |DFlipFlop_211                   |    20|
+|149   |        \genblk1[1].Df            |DFlipFlop_212                   |    14|
+|150   |        \genblk1[20].Df           |DFlipFlop_213                   |    13|
+|151   |        \genblk1[21].Df           |DFlipFlop_214                   |    12|
+|152   |        \genblk1[22].Df           |DFlipFlop_215                   |    13|
+|153   |        \genblk1[23].Df           |DFlipFlop_216                   |     8|
+|154   |        \genblk1[24].Df           |DFlipFlop_217                   |     9|
+|155   |        \genblk1[25].Df           |DFlipFlop_218                   |    16|
+|156   |        \genblk1[26].Df           |DFlipFlop_219                   |    13|
+|157   |        \genblk1[27].Df           |DFlipFlop_220                   |    10|
+|158   |        \genblk1[28].Df           |DFlipFlop_221                   |    12|
+|159   |        \genblk1[29].Df           |DFlipFlop_222                   |    11|
+|160   |        \genblk1[2].Df            |DFlipFlop_223                   |    19|
+|161   |        \genblk1[30].Df           |DFlipFlop_224                   |    11|
+|162   |        \genblk1[31].Df           |DFlipFlop_225                   |     6|
+|163   |        \genblk1[3].Df            |DFlipFlop_226                   |    15|
+|164   |        \genblk1[4].Df            |DFlipFlop_227                   |    16|
+|165   |        \genblk1[5].Df            |DFlipFlop_228                   |    13|
+|166   |        \genblk1[6].Df            |DFlipFlop_229                   |    16|
+|167   |        \genblk1[7].Df            |DFlipFlop_230                   |    19|
+|168   |        \genblk1[8].Df            |DFlipFlop_231                   |    15|
+|169   |        \genblk1[9].Df            |DFlipFlop_232                   |    10|
+|170   |      \genblk1[4].R               |Register_4                      |    33|
+|171   |        \genblk1[0].Df            |DFlipFlop_169                   |     2|
+|172   |        \genblk1[10].Df           |DFlipFlop_170                   |     1|
+|173   |        \genblk1[11].Df           |DFlipFlop_171                   |     1|
+|174   |        \genblk1[12].Df           |DFlipFlop_172                   |     1|
+|175   |        \genblk1[13].Df           |DFlipFlop_173                   |     1|
+|176   |        \genblk1[14].Df           |DFlipFlop_174                   |     1|
+|177   |        \genblk1[15].Df           |DFlipFlop_175                   |     1|
+|178   |        \genblk1[16].Df           |DFlipFlop_176                   |     1|
+|179   |        \genblk1[17].Df           |DFlipFlop_177                   |     1|
+|180   |        \genblk1[18].Df           |DFlipFlop_178                   |     1|
+|181   |        \genblk1[19].Df           |DFlipFlop_179                   |     1|
+|182   |        \genblk1[1].Df            |DFlipFlop_180                   |     1|
+|183   |        \genblk1[20].Df           |DFlipFlop_181                   |     1|
+|184   |        \genblk1[21].Df           |DFlipFlop_182                   |     1|
+|185   |        \genblk1[22].Df           |DFlipFlop_183                   |     1|
+|186   |        \genblk1[23].Df           |DFlipFlop_184                   |     1|
+|187   |        \genblk1[24].Df           |DFlipFlop_185                   |     1|
+|188   |        \genblk1[25].Df           |DFlipFlop_186                   |     1|
+|189   |        \genblk1[26].Df           |DFlipFlop_187                   |     1|
+|190   |        \genblk1[27].Df           |DFlipFlop_188                   |     1|
+|191   |        \genblk1[28].Df           |DFlipFlop_189                   |     1|
+|192   |        \genblk1[29].Df           |DFlipFlop_190                   |     1|
+|193   |        \genblk1[2].Df            |DFlipFlop_191                   |     1|
+|194   |        \genblk1[30].Df           |DFlipFlop_192                   |     1|
+|195   |        \genblk1[31].Df           |DFlipFlop_193                   |     1|
+|196   |        \genblk1[3].Df            |DFlipFlop_194                   |     1|
+|197   |        \genblk1[4].Df            |DFlipFlop_195                   |     1|
+|198   |        \genblk1[5].Df            |DFlipFlop_196                   |     1|
+|199   |        \genblk1[6].Df            |DFlipFlop_197                   |     1|
+|200   |        \genblk1[7].Df            |DFlipFlop_198                   |     1|
+|201   |        \genblk1[8].Df            |DFlipFlop_199                   |     1|
+|202   |        \genblk1[9].Df            |DFlipFlop_200                   |     1|
+|203   |      \genblk1[5].R               |Register_5                      |    33|
+|204   |        \genblk1[0].Df            |DFlipFlop_137                   |     2|
+|205   |        \genblk1[10].Df           |DFlipFlop_138                   |     1|
+|206   |        \genblk1[11].Df           |DFlipFlop_139                   |     1|
+|207   |        \genblk1[12].Df           |DFlipFlop_140                   |     1|
+|208   |        \genblk1[13].Df           |DFlipFlop_141                   |     1|
+|209   |        \genblk1[14].Df           |DFlipFlop_142                   |     1|
+|210   |        \genblk1[15].Df           |DFlipFlop_143                   |     1|
+|211   |        \genblk1[16].Df           |DFlipFlop_144                   |     1|
+|212   |        \genblk1[17].Df           |DFlipFlop_145                   |     1|
+|213   |        \genblk1[18].Df           |DFlipFlop_146                   |     1|
+|214   |        \genblk1[19].Df           |DFlipFlop_147                   |     1|
+|215   |        \genblk1[1].Df            |DFlipFlop_148                   |     1|
+|216   |        \genblk1[20].Df           |DFlipFlop_149                   |     1|
+|217   |        \genblk1[21].Df           |DFlipFlop_150                   |     1|
+|218   |        \genblk1[22].Df           |DFlipFlop_151                   |     1|
+|219   |        \genblk1[23].Df           |DFlipFlop_152                   |     1|
+|220   |        \genblk1[24].Df           |DFlipFlop_153                   |     1|
+|221   |        \genblk1[25].Df           |DFlipFlop_154                   |     1|
+|222   |        \genblk1[26].Df           |DFlipFlop_155                   |     1|
+|223   |        \genblk1[27].Df           |DFlipFlop_156                   |     1|
+|224   |        \genblk1[28].Df           |DFlipFlop_157                   |     1|
+|225   |        \genblk1[29].Df           |DFlipFlop_158                   |     1|
+|226   |        \genblk1[2].Df            |DFlipFlop_159                   |     1|
+|227   |        \genblk1[30].Df           |DFlipFlop_160                   |     1|
+|228   |        \genblk1[31].Df           |DFlipFlop_161                   |     1|
+|229   |        \genblk1[3].Df            |DFlipFlop_162                   |     1|
+|230   |        \genblk1[4].Df            |DFlipFlop_163                   |     1|
+|231   |        \genblk1[5].Df            |DFlipFlop_164                   |     1|
+|232   |        \genblk1[6].Df            |DFlipFlop_165                   |     1|
+|233   |        \genblk1[7].Df            |DFlipFlop_166                   |     1|
+|234   |        \genblk1[8].Df            |DFlipFlop_167                   |     1|
+|235   |        \genblk1[9].Df            |DFlipFlop_168                   |     1|
+|236   |      \genblk1[6].R               |Register_6                      |    33|
+|237   |        \genblk1[0].Df            |DFlipFlop_105                   |     2|
+|238   |        \genblk1[10].Df           |DFlipFlop_106                   |     1|
+|239   |        \genblk1[11].Df           |DFlipFlop_107                   |     1|
+|240   |        \genblk1[12].Df           |DFlipFlop_108                   |     1|
+|241   |        \genblk1[13].Df           |DFlipFlop_109                   |     1|
+|242   |        \genblk1[14].Df           |DFlipFlop_110                   |     1|
+|243   |        \genblk1[15].Df           |DFlipFlop_111                   |     1|
+|244   |        \genblk1[16].Df           |DFlipFlop_112                   |     1|
+|245   |        \genblk1[17].Df           |DFlipFlop_113                   |     1|
+|246   |        \genblk1[18].Df           |DFlipFlop_114                   |     1|
+|247   |        \genblk1[19].Df           |DFlipFlop_115                   |     1|
+|248   |        \genblk1[1].Df            |DFlipFlop_116                   |     1|
+|249   |        \genblk1[20].Df           |DFlipFlop_117                   |     1|
+|250   |        \genblk1[21].Df           |DFlipFlop_118                   |     1|
+|251   |        \genblk1[22].Df           |DFlipFlop_119                   |     1|
+|252   |        \genblk1[23].Df           |DFlipFlop_120                   |     1|
+|253   |        \genblk1[24].Df           |DFlipFlop_121                   |     1|
+|254   |        \genblk1[25].Df           |DFlipFlop_122                   |     1|
+|255   |        \genblk1[26].Df           |DFlipFlop_123                   |     1|
+|256   |        \genblk1[27].Df           |DFlipFlop_124                   |     1|
+|257   |        \genblk1[28].Df           |DFlipFlop_125                   |     1|
+|258   |        \genblk1[29].Df           |DFlipFlop_126                   |     1|
+|259   |        \genblk1[2].Df            |DFlipFlop_127                   |     1|
+|260   |        \genblk1[30].Df           |DFlipFlop_128                   |     1|
+|261   |        \genblk1[31].Df           |DFlipFlop_129                   |     1|
+|262   |        \genblk1[3].Df            |DFlipFlop_130                   |     1|
+|263   |        \genblk1[4].Df            |DFlipFlop_131                   |     1|
+|264   |        \genblk1[5].Df            |DFlipFlop_132                   |     1|
+|265   |        \genblk1[6].Df            |DFlipFlop_133                   |     1|
+|266   |        \genblk1[7].Df            |DFlipFlop_134                   |     1|
+|267   |        \genblk1[8].Df            |DFlipFlop_135                   |     1|
+|268   |        \genblk1[9].Df            |DFlipFlop_136                   |     1|
+|269   |      \genblk1[7].R               |Register_7                      |    97|
+|270   |        \genblk1[0].Df            |DFlipFlop_73                    |     4|
+|271   |        \genblk1[10].Df           |DFlipFlop_74                    |     3|
+|272   |        \genblk1[11].Df           |DFlipFlop_75                    |     3|
+|273   |        \genblk1[12].Df           |DFlipFlop_76                    |     3|
+|274   |        \genblk1[13].Df           |DFlipFlop_77                    |     3|
+|275   |        \genblk1[14].Df           |DFlipFlop_78                    |     3|
+|276   |        \genblk1[15].Df           |DFlipFlop_79                    |     3|
+|277   |        \genblk1[16].Df           |DFlipFlop_80                    |     3|
+|278   |        \genblk1[17].Df           |DFlipFlop_81                    |     3|
+|279   |        \genblk1[18].Df           |DFlipFlop_82                    |     3|
+|280   |        \genblk1[19].Df           |DFlipFlop_83                    |     3|
+|281   |        \genblk1[1].Df            |DFlipFlop_84                    |     3|
+|282   |        \genblk1[20].Df           |DFlipFlop_85                    |     3|
+|283   |        \genblk1[21].Df           |DFlipFlop_86                    |     3|
+|284   |        \genblk1[22].Df           |DFlipFlop_87                    |     3|
+|285   |        \genblk1[23].Df           |DFlipFlop_88                    |     3|
+|286   |        \genblk1[24].Df           |DFlipFlop_89                    |     3|
+|287   |        \genblk1[25].Df           |DFlipFlop_90                    |     3|
+|288   |        \genblk1[26].Df           |DFlipFlop_91                    |     3|
+|289   |        \genblk1[27].Df           |DFlipFlop_92                    |     3|
+|290   |        \genblk1[28].Df           |DFlipFlop_93                    |     3|
+|291   |        \genblk1[29].Df           |DFlipFlop_94                    |     3|
+|292   |        \genblk1[2].Df            |DFlipFlop_95                    |     3|
+|293   |        \genblk1[30].Df           |DFlipFlop_96                    |     3|
+|294   |        \genblk1[31].Df           |DFlipFlop_97                    |     3|
+|295   |        \genblk1[3].Df            |DFlipFlop_98                    |     3|
+|296   |        \genblk1[4].Df            |DFlipFlop_99                    |     3|
+|297   |        \genblk1[5].Df            |DFlipFlop_100                   |     3|
+|298   |        \genblk1[6].Df            |DFlipFlop_101                   |     3|
+|299   |        \genblk1[7].Df            |DFlipFlop_102                   |     3|
+|300   |        \genblk1[8].Df            |DFlipFlop_103                   |     3|
+|301   |        \genblk1[9].Df            |DFlipFlop_104                   |     3|
+|302   |      \genblk1[8].R               |Register_8                      |    34|
+|303   |        \genblk1[0].Df            |DFlipFlop_41                    |     3|
+|304   |        \genblk1[10].Df           |DFlipFlop_42                    |     1|
+|305   |        \genblk1[11].Df           |DFlipFlop_43                    |     1|
+|306   |        \genblk1[12].Df           |DFlipFlop_44                    |     1|
+|307   |        \genblk1[13].Df           |DFlipFlop_45                    |     1|
+|308   |        \genblk1[14].Df           |DFlipFlop_46                    |     1|
+|309   |        \genblk1[15].Df           |DFlipFlop_47                    |     1|
+|310   |        \genblk1[16].Df           |DFlipFlop_48                    |     1|
+|311   |        \genblk1[17].Df           |DFlipFlop_49                    |     1|
+|312   |        \genblk1[18].Df           |DFlipFlop_50                    |     1|
+|313   |        \genblk1[19].Df           |DFlipFlop_51                    |     1|
+|314   |        \genblk1[1].Df            |DFlipFlop_52                    |     1|
+|315   |        \genblk1[20].Df           |DFlipFlop_53                    |     1|
+|316   |        \genblk1[21].Df           |DFlipFlop_54                    |     1|
+|317   |        \genblk1[22].Df           |DFlipFlop_55                    |     1|
+|318   |        \genblk1[23].Df           |DFlipFlop_56                    |     1|
+|319   |        \genblk1[24].Df           |DFlipFlop_57                    |     1|
+|320   |        \genblk1[25].Df           |DFlipFlop_58                    |     1|
+|321   |        \genblk1[26].Df           |DFlipFlop_59                    |     1|
+|322   |        \genblk1[27].Df           |DFlipFlop_60                    |     1|
+|323   |        \genblk1[28].Df           |DFlipFlop_61                    |     1|
+|324   |        \genblk1[29].Df           |DFlipFlop_62                    |     1|
+|325   |        \genblk1[2].Df            |DFlipFlop_63                    |     1|
+|326   |        \genblk1[30].Df           |DFlipFlop_64                    |     1|
+|327   |        \genblk1[31].Df           |DFlipFlop_65                    |     1|
+|328   |        \genblk1[3].Df            |DFlipFlop_66                    |     1|
+|329   |        \genblk1[4].Df            |DFlipFlop_67                    |     1|
+|330   |        \genblk1[5].Df            |DFlipFlop_68                    |     1|
+|331   |        \genblk1[6].Df            |DFlipFlop_69                    |     1|
+|332   |        \genblk1[7].Df            |DFlipFlop_70                    |     1|
+|333   |        \genblk1[8].Df            |DFlipFlop_71                    |     1|
+|334   |        \genblk1[9].Df            |DFlipFlop_72                    |     1|
+|335   |      \genblk1[9].R               |Register_9                      |    97|
+|336   |        \genblk1[0].Df            |DFlipFlop                       |     4|
+|337   |        \genblk1[10].Df           |DFlipFlop_10                    |     3|
+|338   |        \genblk1[11].Df           |DFlipFlop_11                    |     3|
+|339   |        \genblk1[12].Df           |DFlipFlop_12                    |     3|
+|340   |        \genblk1[13].Df           |DFlipFlop_13                    |     3|
+|341   |        \genblk1[14].Df           |DFlipFlop_14                    |     3|
+|342   |        \genblk1[15].Df           |DFlipFlop_15                    |     3|
+|343   |        \genblk1[16].Df           |DFlipFlop_16                    |     3|
+|344   |        \genblk1[17].Df           |DFlipFlop_17                    |     3|
+|345   |        \genblk1[18].Df           |DFlipFlop_18                    |     3|
+|346   |        \genblk1[19].Df           |DFlipFlop_19                    |     3|
+|347   |        \genblk1[1].Df            |DFlipFlop_20                    |     3|
+|348   |        \genblk1[20].Df           |DFlipFlop_21                    |     3|
+|349   |        \genblk1[21].Df           |DFlipFlop_22                    |     3|
+|350   |        \genblk1[22].Df           |DFlipFlop_23                    |     3|
+|351   |        \genblk1[23].Df           |DFlipFlop_24                    |     3|
+|352   |        \genblk1[24].Df           |DFlipFlop_25                    |     3|
+|353   |        \genblk1[25].Df           |DFlipFlop_26                    |     3|
+|354   |        \genblk1[26].Df           |DFlipFlop_27                    |     3|
+|355   |        \genblk1[27].Df           |DFlipFlop_28                    |     3|
+|356   |        \genblk1[28].Df           |DFlipFlop_29                    |     3|
+|357   |        \genblk1[29].Df           |DFlipFlop_30                    |     3|
+|358   |        \genblk1[2].Df            |DFlipFlop_31                    |     3|
+|359   |        \genblk1[30].Df           |DFlipFlop_32                    |     3|
+|360   |        \genblk1[31].Df           |DFlipFlop_33                    |     3|
+|361   |        \genblk1[3].Df            |DFlipFlop_34                    |     3|
+|362   |        \genblk1[4].Df            |DFlipFlop_35                    |     3|
+|363   |        \genblk1[5].Df            |DFlipFlop_36                    |     3|
+|364   |        \genblk1[6].Df            |DFlipFlop_37                    |     3|
+|365   |        \genblk1[7].Df            |DFlipFlop_38                    |     3|
+|366   |        \genblk1[8].Df            |DFlipFlop_39                    |     3|
+|367   |        \genblk1[9].Df            |DFlipFlop_40                    |     3|
+|368   |  four_Digit_Seven_Segment_Driver |Four_Digit_Seven_Segment_Driver |   103|
 +------+----------------------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 660.258 ; gain = 449.863
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1058 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 660.422 ; gain = 113.262
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 660.422 ; gain = 450.035
+Synthesis finished with 0 errors, 0 critical warnings and 627 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 660.258 ; gain = 113.316
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 660.258 ; gain = 449.863
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 105 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 41 instances were transformed.
+  A total of 60 instances were transformed.
   LD => LDCE: 28 instances
-  RAM64X1S => RAM64X1S (RAMS64E): 13 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-208 Infos, 189 Warnings, 0 Critical Warnings and 0 Errors encountered.
+288 Infos, 184 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 660.422 ; gain = 437.063
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 660.258 ; gain = 436.813
 INFO: [Common 17-1381] The checkpoint 'C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/synth_1/DataPath_Demo.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 660.422 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 19:09:50 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 660.258 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 22:41:45 2019...

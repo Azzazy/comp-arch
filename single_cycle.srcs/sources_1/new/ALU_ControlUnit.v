@@ -8,13 +8,13 @@ always @(*) begin
         ALU_Selection=4'b0110;
     else begin
         case(Concatenated)
-            4'b0000: 
+            4'b0000: //ADD
                 ALU_Selection=4'b0010;
-            4'b0001: 
+            4'b0001: //SUB
                 ALU_Selection=4'b0110;
-            4'b1110: 
+            4'b1110: //AND
                 ALU_Selection=4'b0000;
-            4'b1100: 
+            4'b1100: //OR
                 ALU_Selection=4'b0001;
         endcase
     end 
