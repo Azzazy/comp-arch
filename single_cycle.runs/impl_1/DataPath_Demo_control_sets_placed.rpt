@@ -1,0 +1,82 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (win64) Build 1733598 Wed Dec 14 22:35:39 MST 2016
+| Date         : Tue Mar 19 01:19:28 2019
+| Host         : CSE-P07-2168-13 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DataPath_Demo_control_sets_placed.rpt
+| Design       : DataPath_Demo
+| Device       : xc7a100t
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              81 |           39 |
+| No           | No                    | Yes                    |              13 |            4 |
+| No           | Yes                   | No                     |               2 |            1 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             320 |          170 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|                      Clock Signal                      |                       Enable Signal                      |                    Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------------------------------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+|  dataPath/aLU_ControlUnit/ALU_Selection_reg[2]/G0      |                                                          |                                                       |                1 |              1 |
+|  dataPath/aLU_ControlUnit/ALU_Selection_reg[2]_i_2_n_1 |                                                          | dataPath/aLU_ControlUnit/ALU_Selection_reg[1]_i_2_n_1 |                1 |              2 |
+|  dataPath/ssd_reg[12]_i_2_n_1                          |                                                          |                                                       |                5 |             13 |
+|  clk_IBUF_BUFG                                         |                                                          | rst_IBUF                                              |                4 |             13 |
+|  dataPath/leds_reg[15]_i_2_n_1                         |                                                          |                                                       |                8 |             15 |
+|  clk_sevenSeg_IBUF_BUFG                                |                                                          |                                                       |                5 |             20 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[2].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               16 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[3].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               13 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[1].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               16 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[0].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               19 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/dataMem/mem_reg_0_63_0_0_i_2_n_1                |                                                       |                8 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[4].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               18 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[5].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               18 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[6].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               14 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[7].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               27 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[8].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               17 |             32 |
+|  clk_IBUF_BUFG                                         | dataPath/registerFile/genblk1[9].R/genblk1[0].Df/Q_reg_0 | rst_IBUF                                              |               12 |             32 |
+|  n_0_417_BUFG                                          |                                                          |                                                       |               20 |             32 |
++--------------------------------------------------------+----------------------------------------------------------+-------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 13     |                     2 |
+| 15     |                     1 |
+| 16+    |                    13 |
++--------+-----------------------+
+
+

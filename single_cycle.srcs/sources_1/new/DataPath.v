@@ -1,5 +1,5 @@
 module DataPath (input clk, input rst, input [1:0] ledSel, input [3:0] ssdSel, output reg [15:0] leds, output reg [12:0] ssd);
-    reg [31:0] pc_next;
+    wire [31:0] pc_next;
     reg [31:0] pc;
     
     wire [31:0] Instruction;
@@ -10,50 +10,38 @@ module DataPath (input clk, input rst, input [1:0] ledSel, input [3:0] ssdSel, o
     wire MemWrite;
     wire ALUSrc;
     wire RegWrite;
-    ControlUnit controlUnit(Instruction, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
-    
     wire [31:0] reg_DataOutput1;
     wire [31:0] reg_DataOutput2;
     wire [31:0] reg_WriteData;
-    RegisterFile registerFile(clk, rst, reg_WriteData, Instruction[19:15], Instruction[24:20], Instruction[11:7], RegWrite, reg_DataOutput1, reg_DataOutput2);
-    
     wire [31:0] Immediate;
-    ImmGen immGen(Instruction, Immediate);
-    
     wire [31:0] ALU_B;
-    Mux_2by1_32 mux_2by1_ALU(Immediate, reg_DataOutput2, ALUSrc, ALU_B);
-    
     wire [3:0] ALU_Selection;
-    ALU_ControlUnit aLU_ControlUnit(ALUop, Instruction, ALU_Selection);
-    
     wire [31:0] ALU_out;
     wire ALU_zero;
-    ALU aLU(reg_DataOutput1, ALU_B, ALU_Selection, ALU_out, ALU_zero);
-    
     wire [31:0] mem_DataOut;
-    DataMem dataMem(clk, MemRead, MemWrite, ALU_out[7:2], reg_DataOutput2, mem_DataOut);
-    
-    Mux_2by1_32 mux_2by1_mem(mem_DataOut, ALU_out, MemtoReg, reg_WriteData);
-    
-    InstMem instMem(pc[7:2], Instruction);   
-    
     wire [31:0] Imm_shifted;
+    ControlUnit controlUnit(Instruction, Branch, MemRead, MemtoReg, ALUOp, MemWrite, ALUSrc, RegWrite);
+    RegisterFile registerFile(clk, rst, reg_WriteData, Instruction[19:15], Instruction[24:20], Instruction[11:7], RegWrite, reg_DataOutput1, reg_DataOutput2);
+    ImmGen immGen(Instruction, Immediate);
+    Mux_2by1_32 mux_2by1_ALU(Immediate, reg_DataOutput2, ALUSrc, ALU_B);
+    ALU_ControlUnit aLU_ControlUnit(ALUOp, Instruction, ALU_Selection);
+    ALU aLU(reg_DataOutput1, ALU_B, ALU_Selection, ALU_out, ALU_zero);
+    DataMem dataMem(clk, MemRead, MemWrite, ALU_out[7:2], reg_DataOutput2, mem_DataOut);
+    Mux_2by1_32 mux_2by1_mem(mem_DataOut, ALU_out, MemtoReg, reg_WriteData);
+    InstMem instMem(pc[7:2], Instruction);   
     ShiftLeft_1 shiftLeft_1(Immediate, Imm_shifted);     
-      
     initial 
-        pc=0;
+        pc <= 0;
           
     always @ (posedge clk or posedge rst) 
         if (rst) 
-            pc=0;
+            pc <= 0;
         else 
             pc <= pc_next;
             
+    assign pc_next = (ALU_zero & Branch) ? (pc + Imm_shifted) : (pc + 4);
+    
     always @(*) begin
-        if (ALU_zero & Branch)
-            pc_next <= pc + Imm_shifted;
-        else
-            pc_next <= pc + 4;
         case(ledSel)
             2'b00: 
                 leds =  Instruction[15:0];
@@ -64,7 +52,7 @@ module DataPath (input clk, input rst, input [1:0] ledSel, input [3:0] ssdSel, o
                 leds[0] = Branch;
                 leds[1] = MemRead;
                 leds[2] = MemtoReg;
-                leds[4:3] = ALUOp;
+                leds[4:3] = ALUOp[1:0];
                 leds[5] = MemWrite;
                 leds[6] = ALUSrc;
                 leds[7] = RegWrite;
@@ -96,6 +84,10 @@ module DataPath (input clk, input rst, input [1:0] ledSel, input [3:0] ssdSel, o
                 ssd =  ALU_out[12:0];
             4'b1011:// memory output
                 ssd =  mem_DataOut[12:0];
+            4'b1100: begin// memory output
+                ssd = 0;
+                ssd[3:0] =  ALU_Selection;
+            end
         endcase 
     end
 endmodule

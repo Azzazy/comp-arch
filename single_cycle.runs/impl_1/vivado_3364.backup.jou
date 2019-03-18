@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Mar 19 01:07:24 2019
+# Process ID: 3364
+# Current directory: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/impl_1
+# Command line: vivado.exe -log DataPath_Demo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DataPath_Demo.tcl -notrace
+# Log file: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/impl_1/DataPath_Demo.vdi
+# Journal file: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DataPath_Demo.tcl -notrace

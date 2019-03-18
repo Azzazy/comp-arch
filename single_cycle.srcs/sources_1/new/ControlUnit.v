@@ -37,7 +37,15 @@ module ControlUnit(input [31:0] Instruction, output reg Branch, output reg MemRe
                 ALUSrc=0 ;
                 RegWrite=0 ;
             end 
-            default:;
+            default:begin
+                Branch=0;
+                MemRead=0; 
+                MemtoReg =0;
+                ALUOp=2'b00;
+                MemWrite=0 ;
+                ALUSrc=0 ;
+                RegWrite=0 ;
+            end
         endcase 
     end
 endmodule
