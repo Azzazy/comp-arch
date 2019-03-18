@@ -37,7 +37,7 @@ module DataPath (input clk, input rst, input [1:0] ledSel, input [3:0] ssdSel, o
     
     InstMem instMem(pc[7:2], Instruction);   
     
-    reg [31:0] Imm_shifted;
+    wire [31:0] Imm_shifted;
     ShiftLeft_1 shiftLeft_1(Immediate, Imm_shifted);     
       
     initial 
@@ -87,7 +87,14 @@ module DataPath (input clk, input rst, input [1:0] ledSel, input [3:0] ssdSel, o
                 ssd =  reg_WriteData[12:0];
             4'b0111://  immediate generator output
                 ssd =  Immediate[12:0];
-           
+            4'b1000://  shift left 1 output
+                ssd =  Imm_shifted[12:0];
+            4'b1001://  output of the ALU 2nd source multiplexer 
+                ssd =  ALU_B[12:0];
+            4'b1010://  output of the ALU
+                ssd =  ALU_out[12:0];
+            4'b1011:// memory output
+                ssd =  mem_DataOut[12:0];
         endcase 
     end
 endmodule

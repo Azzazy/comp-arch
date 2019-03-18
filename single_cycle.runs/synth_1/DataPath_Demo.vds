@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Mon Mar 18 17:40:44 2019
-# Process ID: 9988
+# Start of session at: Mon Mar 18 19:09:13 2019
+# Process ID: 11280
 # Current directory: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/synth_1
 # Command line: vivado.exe -log DataPath_Demo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DataPath_Demo.tcl
 # Log file: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/synth_1/DataPath_Demo.vds
@@ -15,23 +15,102 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 4008 
+INFO: Helper process launched with PID 3820 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 305.242 ; gain = 94.855
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 306.309 ; gain = 95.922
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'DataPath_Demo' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath_Demo.v:1]
 INFO: [Synth 8-638] synthesizing module 'DataPath' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:1]
 INFO: [Synth 8-638] synthesizing module 'ControlUnit' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:1]
 INFO: [Synth 8-256] done synthesizing module 'ControlUnit' (1#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:1]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RegisterFile.v:1]
+INFO: [Synth 8-638] synthesizing module 'Register' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Register.v:1]
+INFO: [Synth 8-638] synthesizing module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Mux_2by1.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Mux_2by1' (2#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Mux_2by1.v:1]
+INFO: [Synth 8-638] synthesizing module 'DFlipFlop' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DFlipFlop.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DFlipFlop' (3#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DFlipFlop.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Register' (4#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Register.v:1]
+INFO: [Synth 8-638] synthesizing module 'Decoder_5by32' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Decoder_5by32.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Decoder_5by32' (5#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Decoder_5by32.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (6#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RegisterFile.v:1]
+INFO: [Synth 8-638] synthesizing module 'ImmGen' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:3]
+INFO: [Synth 8-256] done synthesizing module 'ImmGen' (7#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:24]
+WARNING: [Synth 8-689] width (32) of port connection 'B' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:24]
+WARNING: [Synth 8-689] width (32) of port connection 'C' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:24]
+INFO: [Synth 8-638] synthesizing module 'ALU_ControlUnit' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:10]
+INFO: [Synth 8-256] done synthesizing module 'ALU_ControlUnit' (8#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:1]
+WARNING: [Synth 8-689] width (1) of port connection 'ALUop' does not match port width (2) of module 'ALU_ControlUnit' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:27]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-638] synthesizing module 'RippleCarryAdder' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RippleCarryAdder.v:1]
+INFO: [Synth 8-638] synthesizing module 'FullAdder' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/FullAdder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (9#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/FullAdder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'RippleCarryAdder' (10#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RippleCarryAdder.v:1]
+INFO: [Synth 8-638] synthesizing module 'And' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/And.v:1]
+INFO: [Synth 8-256] done synthesizing module 'And' (11#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/And.v:1]
+INFO: [Synth 8-638] synthesizing module 'Or' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Or.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Or' (12#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Or.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (13#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:1]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataMem.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (14#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataMem.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'A' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:36]
+WARNING: [Synth 8-689] width (32) of port connection 'B' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:36]
+WARNING: [Synth 8-689] width (32) of port connection 'C' does not match port width (1) of module 'Mux_2by1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:36]
 INFO: [Synth 8-638] synthesizing module 'InstMem' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/InstMem.v:1]
-INFO: [Synth 8-256] done synthesizing module 'InstMem' (2#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/InstMem.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:32]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:48]
-WARNING: [Synth 8-5788] Register pc_reg in module DataPath is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:19]
-INFO: [Synth 8-256] done synthesizing module 'DataPath' (3#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:1]
+INFO: [Synth 8-256] done synthesizing module 'InstMem' (15#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/InstMem.v:1]
+INFO: [Synth 8-638] synthesizing module 'ShiftLeft_1' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ShiftLeft_1.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ShiftLeft_1' (16#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ShiftLeft_1.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:57]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:73]
+WARNING: [Synth 8-5788] Register pc_reg in module DataPath is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:38]
+WARNING: [Synth 8-3848] Net ALUop in module/entity DataPath does not have driver. [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:27]
+INFO: [Synth 8-256] done synthesizing module 'DataPath' (17#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:1]
 INFO: [Synth 8-638] synthesizing module 'Four_Digit_Seven_Segment_Driver' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Four_Digit.v:1]
-INFO: [Synth 8-256] done synthesizing module 'Four_Digit_Seven_Segment_Driver' (4#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Four_Digit.v:1]
-INFO: [Synth 8-256] done synthesizing module 'DataPath_Demo' (5#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath_Demo.v:1]
+INFO: [Synth 8-256] done synthesizing module 'Four_Digit_Seven_Segment_Driver' (18#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Four_Digit.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DataPath_Demo' (19#1) [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath_Demo.v:1]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[31]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[29]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[28]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[27]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[26]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[25]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[24]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[23]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[22]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[21]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[20]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[19]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[18]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[17]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[16]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[15]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[11]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[10]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[9]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[8]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[7]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[6]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[5]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[4]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[3]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[2]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[1]
+WARNING: [Synth 8-3331] design ALU_ControlUnit has unconnected port Instruction[0]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[19]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[18]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[17]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[16]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[15]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[14]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[13]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[12]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[4]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[3]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[2]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[1]
+WARNING: [Synth 8-3331] design ImmGen has unconnected port Instruction[0]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[31]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[30]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[29]
@@ -60,7 +139,7 @@ WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[7]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[1]
 WARNING: [Synth 8-3331] design ControlUnit has unconnected port Instruction[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 342.605 ; gain = 132.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 343.637 ; gain = 133.250
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -69,8 +148,9 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin aLU_ControlUnit:ALUop[0] to constant 0 [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:27]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 342.605 ; gain = 132.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 343.637 ; gain = 133.250
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -86,37 +166,43 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 649.574 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 660.422 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ALU_Selection" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ALU_Selection" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Add_Selector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Add_Selector" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "pc" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "ssd" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:5]
 WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:6]
 WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:8]
 WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:9]
 WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:10]
 WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ControlUnit.v:11]
-WARNING: [Synth 8-327] inferring latch for variable 'leds_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:34]
-WARNING: [Synth 8-327] inferring latch for variable 'ssd_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'Immediate_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ImmGen.v:5]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_Selection_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v:6]
+WARNING: [Synth 8-327] inferring latch for variable 'Add_Selector_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'leds_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'ssd_reg' [C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/DataPath.v:75]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -130,17 +216,26 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input     13 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
 +---Registers : 
 	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1024  
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
 	  14 Input     32 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
 	   4 Input      4 Bit        Muxes := 2     
-	   5 Input      1 Bit        Muxes := 5     
-	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 3     
+	  13 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -152,6 +247,44 @@ Module ControlUnit
 Detailed RTL Component Info : 
 +---Muxes : 
 	   5 Input      1 Bit        Muxes := 5     
+Module Decoder_5by32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DFlipFlop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ImmGen 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU_ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module FullAdder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module RippleCarryAdder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module DataMem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 Module InstMem 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -160,14 +293,15 @@ Module DataPath
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
-	   2 Input     13 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	  13 Input      1 Bit        Muxes := 1     
 Module Four_Digit_Seven_Segment_Driver 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -187,34 +321,251 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/pc_reg[0] )
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[31]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[30]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[29]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[28]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[27]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[26]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[25]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[24]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[23]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[22]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[21]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[20]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[19]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[18]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[17]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[16]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[15]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[14]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[13]' (LD) to 'dataPath/immGen/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[12]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[31].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[30].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[29].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[28].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[27].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[27].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[26].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[25].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[24].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[23].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[22].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[21].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[20].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[19].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[18].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[17].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[16].R/genblk1[26].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[31].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[30].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[29].R/genblk1[25].Df/Q_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/registerFile /\genblk1[28].R/genblk1[25].Df/Q_reg )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[4]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[5]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[6]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[7]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
+INFO: [Synth 8-3886] merging instance 'dataPath/immGen/Immediate_reg[8]' (LD) to 'dataPath/immGen/Immediate_reg[11]'
 INFO: [Synth 8-3886] merging instance 'dataPath/controlUnit/Branch_reg' (LD) to 'dataPath/controlUnit/ALUOp_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/leds_reg[11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/ssd_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (dataPath/leds_reg[11]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/ssd_reg[0]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[31]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[30]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[29]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[28]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[27]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[26]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[25]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[24]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[23]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[22]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[21]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[20]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[19]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[18]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[17]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[16]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[15]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[14]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[13]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[0]) is unused and will be removed from module DataPath_Demo.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[0].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[1].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[8].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[9].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[10].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[11].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[12].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[13].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[14].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[15].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[16].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[17].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[18].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[19].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[20].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[21].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[22].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[23].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[24].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[25].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[26].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[27].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[28].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[29].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[30].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[2].R/genblk1[31].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[1].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[2].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[3].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[4].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[5].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[6].Df/Q_reg) is unused and will be removed from module RegisterFile.
+WARNING: [Synth 8-3332] Sequential element (genblk1[3].R/genblk1[7].Df/Q_reg) is unused and will be removed from module RegisterFile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 660.422 ; gain = 450.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++--------------+--------------------------+-----------+----------------------+-----------------+
+|Module Name   | RTL Object               | Inference | Size (Depth x Width) | Primitives      | 
++--------------+--------------------------+-----------+----------------------+-----------------+
+|DataPath_Demo | dataPath/dataMem/mem_reg | Implied   | 64 x 13              | RAM64X1S x 13   | 
++--------------+--------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -229,10 +580,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -243,16 +594,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dataPath/pc_reg[1] )
-WARNING: [Synth 8-3332] Sequential element (dataPath/controlUnit/MemRead_reg) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/controlUnit/ALUOp_reg[1]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/controlUnit/MemWrite_reg) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/controlUnit/ALUSrc_reg) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/controlUnit/RegWrite_reg) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/controlUnit/ALUOp_reg[0]) is unused and will be removed from module DataPath_Demo.
-WARNING: [Synth 8-3332] Sequential element (dataPath/pc_reg[1]) is unused and will be removed from module DataPath_Demo.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,7 +619,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -289,7 +632,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -301,25 +644,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -332,51 +675,88 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    31|
-|3     |LUT1   |    49|
-|4     |LUT2   |    40|
-|5     |LUT3   |    21|
-|6     |LUT4   |    21|
-|7     |LUT5   |    19|
-|8     |LUT6   |    49|
-|9     |FDCE   |    11|
-|10    |FDRE   |    20|
-|11    |LD     |    27|
-|12    |IBUF   |     9|
-|13    |OBUF   |    27|
-+------+-------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    36|
+|3     |LUT1     |    53|
+|4     |LUT2     |    45|
+|5     |LUT3     |    32|
+|6     |LUT4     |    58|
+|7     |LUT5     |    24|
+|8     |LUT6     |    91|
+|9     |MUXF7    |     1|
+|10    |RAM64X1S |    13|
+|11    |FDCE     |    28|
+|12    |FDRE     |    20|
+|13    |LD       |    28|
+|14    |IBUF     |     9|
+|15    |OBUF     |    27|
++------+---------+------+
 
 Report Instance Areas: 
 +------+----------------------------------+--------------------------------+------+
 |      |Instance                          |Module                          |Cells |
 +------+----------------------------------+--------------------------------+------+
-|1     |top                               |                                |   326|
-|2     |  dataPath                        |DataPath                        |   184|
-|3     |  four_Digit_Seven_Segment_Driver |Four_Digit_Seven_Segment_Driver |   104|
+|1     |top                               |                                |   467|
+|2     |  dataPath                        |DataPath                        |   326|
+|3     |    dataMem                       |DataMem                         |    54|
+|4     |    registerFile                  |RegisterFile                    |    49|
+|5     |      \genblk1[0].R               |Register                        |     4|
+|6     |        \genblk1[0].Df            |DFlipFlop_29                    |     4|
+|7     |      \genblk1[10].R              |Register_0                      |     1|
+|8     |        \genblk1[0].Df            |DFlipFlop_28                    |     1|
+|9     |      \genblk1[11].R              |Register_1                      |     2|
+|10    |        \genblk1[0].Df            |DFlipFlop_27                    |     2|
+|11    |      \genblk1[12].R              |Register_2                      |     1|
+|12    |        \genblk1[0].Df            |DFlipFlop_26                    |     1|
+|13    |      \genblk1[13].R              |Register_3                      |     1|
+|14    |        \genblk1[0].Df            |DFlipFlop_25                    |     1|
+|15    |      \genblk1[14].R              |Register_4                      |     1|
+|16    |        \genblk1[0].Df            |DFlipFlop_24                    |     1|
+|17    |      \genblk1[15].R              |Register_5                      |    10|
+|18    |        \genblk1[0].Df            |DFlipFlop_23                    |    10|
+|19    |      \genblk1[1].R               |Register_6                      |     1|
+|20    |        \genblk1[0].Df            |DFlipFlop_22                    |     1|
+|21    |      \genblk1[2].R               |Register_7                      |     1|
+|22    |        \genblk1[0].Df            |DFlipFlop_21                    |     1|
+|23    |      \genblk1[3].R               |Register_8                      |    19|
+|24    |        \genblk1[0].Df            |DFlipFlop_20                    |    19|
+|25    |      \genblk1[4].R               |Register_9                      |     1|
+|26    |        \genblk1[0].Df            |DFlipFlop_19                    |     1|
+|27    |      \genblk1[5].R               |Register_10                     |     1|
+|28    |        \genblk1[0].Df            |DFlipFlop_18                    |     1|
+|29    |      \genblk1[6].R               |Register_11                     |     1|
+|30    |        \genblk1[0].Df            |DFlipFlop_17                    |     1|
+|31    |      \genblk1[7].R               |Register_12                     |     3|
+|32    |        \genblk1[0].Df            |DFlipFlop_16                    |     3|
+|33    |      \genblk1[8].R               |Register_13                     |     1|
+|34    |        \genblk1[0].Df            |DFlipFlop_15                    |     1|
+|35    |      \genblk1[9].R               |Register_14                     |     1|
+|36    |        \genblk1[0].Df            |DFlipFlop                       |     1|
+|37    |  four_Digit_Seven_Segment_Driver |Four_Digit_Seven_Segment_Driver |   103|
 +------+----------------------------------+--------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 649.574 ; gain = 439.188
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 660.422 ; gain = 450.035
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 649.574 ; gain = 112.191
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 649.574 ; gain = 439.188
+Synthesis finished with 0 errors, 0 critical warnings and 1058 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 660.422 ; gain = 113.262
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:35 . Memory (MB): peak = 660.422 ; gain = 450.035
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 67 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 27 instances were transformed.
-  LD => LDCE: 27 instances
+  A total of 41 instances were transformed.
+  LD => LDCE: 28 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 13 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+208 Infos, 189 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 649.574 ; gain = 426.168
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 660.422 ; gain = 437.063
 INFO: [Common 17-1381] The checkpoint 'C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.runs/synth_1/DataPath_Demo.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 649.574 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 17:41:16 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 660.422 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 18 19:09:50 2019...
