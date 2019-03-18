@@ -3,5 +3,9 @@
 Dec 14 2016
 22:58:16
 C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav/glbl.v,1481753704,verilog,,,,glbl,,,,,,,,
-C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sim_1/new/ALU_ControlUnit_tb.v,1552921670,verilog,,,,ALU_ControlUnit_tb,,,,,,,,
-C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU_ControlUnit.v,1552921618,verilog,,,,ALU_ControlUnit,,,,,,,,
+C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sim_1/new/ALU_tb.v,1552927637,verilog,,,,ALU_tb,,,,,,,,
+C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/ALU.v,1552927521,verilog,,,,ALU,,,,,,,,
+C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/And.v,1552912946,verilog,,,,And,,,,,,,,
+C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/FullAdder.v,1552912877,verilog,,,,FullAdder,,,,,,,,
+C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Or.v,1552912958,verilog,,,,Or,,,,,,,,
+C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/RippleCarryAdder.v,1552913166,verilog,,,,RippleCarryAdder,,,,,,,,

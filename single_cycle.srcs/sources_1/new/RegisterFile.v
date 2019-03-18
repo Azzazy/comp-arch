@@ -1,4 +1,4 @@
-module RegisterFile(input rst, input [31:0] WriteData, input [4:0] Selector1, input [4:0] Selector2, input [4:0] decoderSelector, input clk, input WriteEnable, output [31:0] DataOutput1, output [31:0]DataOutput2);
+module RegisterFile(input clk, input rst, input [31:0] WriteData, input [4:0] Selector1, input [4:0] Selector2, input [4:0] decoderSelector, input WriteEnable, output [31:0] DataOutput1, output [31:0]DataOutput2);
     wire [31:0] Load;
     wire [31:0] REGISTERS_DATA[0:31];
     Decoder_5by32 Decoder(decoderSelector, WriteEnable, Load);
