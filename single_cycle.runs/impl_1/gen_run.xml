@@ -1,74 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1552959203">
-  <File Type="PWROPT-DRC" Name="DataPath_Demo_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="DataPath_Demo_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="DataPath_Demo_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="DataPath_Demo_power_routed.rpx"/>
-  <File Type="PA-TCL" Name="DataPath_Demo.tcl"/>
-  <File Type="OPT-HWDEF" Name="DataPath_Demo.hwdef"/>
-  <File Type="RDI-RDI" Name="DataPath_Demo.vdi"/>
-  <File Type="OPT-DCP" Name="DataPath_Demo_opt.dcp"/>
-  <File Type="OPT-DRC" Name="DataPath_Demo_drc_opted.rpt"/>
-  <File Type="OPT-TIMING" Name="DataPath_Demo_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="DataPath_Demo_pwropt.dcp"/>
-  <File Type="PWROPT-TIMING" Name="DataPath_Demo_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="DataPath_Demo_placed.dcp"/>
-  <File Type="PLACE-IO" Name="DataPath_Demo_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="DataPath_Demo_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="DataPath_Demo_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="DataPath_Demo_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="DataPath_Demo_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="DataPath_Demo_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="DataPath_Demo_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="DataPath_Demo_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="DataPath_Demo_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="DataPath_Demo_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="DataPath_Demo_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="DataPath_Demo_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="DataPath_Demo_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="DataPath_Demo_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="DataPath_Demo_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="DataPath_Demo_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="DataPath_Demo_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="DataPath_Demo_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="DataPath_Demo.bin"/>
-  <File Type="ROUTE-DRC-RPX" Name="DataPath_Demo_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="DataPath_Demo.drc"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="DataPath_Demo_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="DataPath_Demo.msk"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DataPath_Demo_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="DataPath_Demo.bgn"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DataPath_Demo_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="DataPath_Demo_power_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="DataPath_Demo_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="DataPath_Demo_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="DataPath_Demo_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="DataPath_Demo_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="DataPath_Demo_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="DataPath_Demo_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="DataPath_Demo_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="DataPath_Demo_clock_utilization_routed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="DataPath_Demo_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DataPath_Demo_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DataPath_Demo_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DataPath_Demo_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DataPath_Demo_timing_summary_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="DataPath_Demo.bit"/>
-  <File Type="BITSTR-RBT" Name="DataPath_Demo.rbt"/>
-  <File Type="BITSTR-NKY" Name="DataPath_Demo.nky"/>
-  <File Type="BITSTR-BMM" Name="DataPath_Demo_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="DataPath_Demo.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="DataPath_Demo.sysdef"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553266846">
+  <File Type="PWROPT-DRC" Name="RCA_Demo_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="RCA_Demo_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="RCA_Demo_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="RCA_Demo_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="RCA_Demo.tcl"/>
+  <File Type="OPT-HWDEF" Name="RCA_Demo.hwdef"/>
+  <File Type="RDI-RDI" Name="RCA_Demo.vdi"/>
+  <File Type="OPT-DCP" Name="RCA_Demo_opt.dcp"/>
+  <File Type="OPT-DRC" Name="RCA_Demo_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="RCA_Demo_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="RCA_Demo_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="RCA_Demo_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="RCA_Demo_placed.dcp"/>
+  <File Type="PLACE-IO" Name="RCA_Demo_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="RCA_Demo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="RCA_Demo_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="RCA_Demo_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="RCA_Demo_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="RCA_Demo_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="RCA_Demo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="RCA_Demo_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="RCA_Demo_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="RCA_Demo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="RCA_Demo_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="RCA_Demo_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="RCA_Demo_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="RCA_Demo_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="RCA_Demo_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="RCA_Demo_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="RCA_Demo_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="RCA_Demo_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="RCA_Demo.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="RCA_Demo_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="RCA_Demo.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="RCA_Demo_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="RCA_Demo.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RCA_Demo_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="RCA_Demo.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RCA_Demo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="RCA_Demo_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="RCA_Demo_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="RCA_Demo_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="RCA_Demo_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="RCA_Demo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="RCA_Demo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="RCA_Demo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="RCA_Demo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="RCA_Demo_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="RCA_Demo_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RCA_Demo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RCA_Demo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RCA_Demo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RCA_Demo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="RCA_Demo.bit"/>
+  <File Type="BITSTR-RBT" Name="RCA_Demo.rbt"/>
+  <File Type="BITSTR-NKY" Name="RCA_Demo.nky"/>
+  <File Type="BITSTR-BMM" Name="RCA_Demo_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="RCA_Demo.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="RCA_Demo.sysdef"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/Mux_2by1.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/FullAdder.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -76,112 +69,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/DFlipFlop.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/RippleCarryAdder.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Register.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Or.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Decoder_5by32.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/And.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ShiftLeft_1.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/RegisterFile.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/Mux_2by1_32.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/InstMem.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ImmGen.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/DataMem.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ControlUnit.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ALU_ControlUnit.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/ALU.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/DataPath.v">
+    <File Path="$PSRCDIR/sources_1/new/RCA.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -195,8 +83,184 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/RCA_Demo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSA.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CSA_Demo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SSD_Demo.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_2by1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DFlipFlop.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RippleCarryAdder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Register.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Or.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Decoder_5by32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/And.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ShiftLeft_1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterFile.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux_2by1_32.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstMem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ImmGen.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMem.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU_ControlUnit.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataPath.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/DataPath_Demo.v">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Inverter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -204,7 +268,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="DataPath_Demo"/>
+      <Option Name="TopModule" Val="RCA_Demo"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -215,8 +279,26 @@
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/constrs_1/new/inv_consts.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/ssd_consts.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/rca_consts.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/consts.xdc"/>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/rca_consts.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
