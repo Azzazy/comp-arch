@@ -1,6 +1,6 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sources_1/new/Inverter.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Inverter
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.srcs/sim_1/new/Inverter_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Inverter_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.srcs/sim_1/new/DataMem_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

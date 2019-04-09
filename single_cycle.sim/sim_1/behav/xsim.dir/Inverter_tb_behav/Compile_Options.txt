@@ -1,1 +1,0 @@
--wto "da54a0eeda75472e875fce00a2c02fac" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Inverter_tb_behav" "xil_defaultlib.Inverter_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

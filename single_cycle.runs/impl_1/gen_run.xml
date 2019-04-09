@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1553266846">
-  <File Type="PWROPT-DRC" Name="RCA_Demo_drc_pwropted.rpt"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="RCA_Demo_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="RCA_Demo_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="RCA_Demo_power_routed.rpx"/>
   <File Type="PA-TCL" Name="RCA_Demo.tcl"/>
-  <File Type="OPT-HWDEF" Name="RCA_Demo.hwdef"/>
+  <File Type="INIT-TIMING" Name="RCA_Demo_timing_summary_init.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="RCA_Demo_methodology_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="RCA_Demo_drc_pwropted.rpt"/>
   <File Type="RDI-RDI" Name="RCA_Demo.vdi"/>
   <File Type="OPT-DCP" Name="RCA_Demo_opt.dcp"/>
+  <File Type="OPT-HWDEF" Name="RCA_Demo.hwdef"/>
   <File Type="OPT-DRC" Name="RCA_Demo_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="RCA_Demo_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="RCA_Demo_pwropt.dcp"/>
@@ -31,14 +31,14 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="RCA_Demo_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="RCA_Demo_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="RCA_Demo_drc_routed.pb"/>
-  <File Type="BG-BIN" Name="RCA_Demo.bin"/>
   <File Type="ROUTE-DRC-RPX" Name="RCA_Demo_drc_routed.rpx"/>
-  <File Type="BG-DRC" Name="RCA_Demo.drc"/>
+  <File Type="BG-BIN" Name="RCA_Demo.bin"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="RCA_Demo_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-MSK" Name="RCA_Demo.msk"/>
+  <File Type="BG-DRC" Name="RCA_Demo.drc"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RCA_Demo_methodology_drc_routed.rpx"/>
-  <File Type="BG-BGN" Name="RCA_Demo.bgn"/>
+  <File Type="BITSTR-MSK" Name="RCA_Demo.msk"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RCA_Demo_methodology_drc_routed.pb"/>
+  <File Type="BG-BGN" Name="RCA_Demo.bgn"/>
   <File Type="ROUTE-PWR" Name="RCA_Demo_power_routed.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="RCA_Demo_power_summary_routed.pb"/>
   <File Type="ROUTE-STATUS" Name="RCA_Demo_route_status.rpt"/>

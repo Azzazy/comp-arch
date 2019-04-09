@@ -2,11 +2,11 @@
 # Webtalk v2016.4 (64-bit)
 # SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
 # IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Fri Mar 22 17:33:35 2019
-# Process ID: 14812
-# Current directory: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav
-# Command line: wbtcv.exe -mode batch -source C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav/xsim.dir/Inverter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav/webtalk.log
-# Journal file: C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav\webtalk.jou
+# Start of session at: Tue Apr 09 10:02:25 2019
+# Process ID: 1384
+# Current directory: C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.sim/sim_1/behav/xsim.dir/DataMem_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
-source C:/Users/msa.azzazy.AUC/single_cycle/single_cycle.sim/sim_1/behav/xsim.dir/Inverter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/msa.azzazy.AUC.000/comp-arch/single_cycle.sim/sim_1/behav/xsim.dir/DataMem_tb_behav/webtalk/xsim_webtalk.tcl -notrace

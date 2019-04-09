@@ -1,18 +1,34 @@
-module DataMem(input clk, input MemRead, input MemWrite,input [5:0] addr, input [31:0] data_in, output [31:0] data_out);
-    reg [31:0] mem [0:63];
-    always @(posedge clk) begin
-        if (MemWrite)
-            mem[addr] <= data_in;
-    end
-    assign data_out = MemRead?mem[addr]:0;
-    initial begin
-        mem[0]=32'd17;
-        mem[1]=32'd9;
-        mem[2]=32'd25;
-        
-//        mem[0]=32'd0; //final sum
-//        mem[1]=32'd5; //increment value
-//        mem[2]=32'd3; //number of steps
-//        mem[3]=32'd1; //step
-    end
+module DataMem
+ (input clk, input MemRead, input MemWrite,
+ input [9:0] addr, input [31:0] data_in,
+ output reg [127:0] data_out, output reg ready);
+ reg [31:0] mem [0:1023];
+ wire [9:0] bAddr;
+ assign bAddr = {addr[9:2],2'b00};
+
+ always @(posedge clk)
+ begin
+ ready <= 0;
+ if (MemWrite) begin
+ repeat (3) begin
+ @ (posedge clk);
+ end
+ mem[addr] <= data_in;
+ ready <= 1;
+ end
+ else if (MemRead) begin
+ repeat (3) begin
+ @ (posedge clk);
+ end
+ data_out <={mem[bAddr],mem[bAddr+1],mem[bAddr+2],mem[bAddr+3]};
+ ready <= 1;
+ end
+ end
+ 
+ initial begin
+ mem[0]=32'd17;
+ mem[1]=32'd9;
+ mem[2]=32'd25;
+ end
+
 endmodule
